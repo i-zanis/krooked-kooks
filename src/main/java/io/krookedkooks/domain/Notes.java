@@ -18,4 +18,37 @@ public class Notes {
   // Java's String length (2^31 - 1) > Hibernate/JPA's (255)
   @Lob
   private String recipeNotes;
+
+  public Notes(Long id, Recipe recipe, String recipeNotes) {
+    this.id = id;
+    this.recipe = recipe;
+    this.recipeNotes = recipeNotes;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public Notes setId(Long id) {
+    this.id = id;
+    return this;
+  }
+
+  public Recipe getRecipe() {
+    return recipe;
+  }
+
+  public Notes setRecipe(Recipe recipe) {
+    this.recipe = recipe;
+    return this;
+  }
+
+  public String getRecipeNotes() {
+    return recipeNotes;
+  }
+
+  public Notes setRecipeNotes(String recipeNotes) {
+    this.recipeNotes = recipeNotes;
+    return this;
+  }
 }
