@@ -1,4 +1,4 @@
-package io.krookedkooks.krookedkooks;
+package io.krookedkooks;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
