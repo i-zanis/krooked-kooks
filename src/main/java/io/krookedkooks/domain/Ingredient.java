@@ -16,10 +16,10 @@ public class Ingredient {
   @OneToOne
   private MeasureUnit unit;
 
-  public Ingredient(BigDecimal amount, String description, Recipe recipe) {
-    this.amount = amount;
+  public Ingredient(String description, BigDecimal amount, MeasureUnit unit) {
     this.description = description;
-    this.recipe = recipe;
+    this.amount = amount;
+    this.unit = unit;
   }
 
   public Ingredient() {
